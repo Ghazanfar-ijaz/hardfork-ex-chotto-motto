@@ -27,8 +27,9 @@ main {
 
 /* les images ne dépassent pas l'écran */
 img {
-  margin: 100%;
+  max-width: 100%;
   height: auto; 
+  box-shadow: 10px 10px 0 #fee500;
 }
 
 /* centrer les éléments de la partie header */
