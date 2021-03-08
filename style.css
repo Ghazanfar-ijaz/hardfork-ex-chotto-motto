@@ -23,27 +23,24 @@ body {
 /* le block contenu est centré ne dépasse pas la largeur de 720px */
 main {
   max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* les images ne dépassent pas l'écran */
 img {
   margin: 100%;
-  height: auto;
-  box-shadow:10px 10px 0 #fee500;
+  height: auto; 
 }
+
 /* centrer les éléments de la partie header */
 header {
   text-align: center;
   margin: auto;
-  padding-top: 2rem;
 }
 
 /* titre h2 centré */
-h2 {
+h1 {
   text-align: center;
-  font-size: large;
+  font-weight: bold;
 }
 
 /* les éléments dans le footer centrée */
@@ -53,7 +50,7 @@ footer {
 
 /* taille de police plus grande (32px) dans le paragraphe intro, centré */
 .intro {
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -71,26 +68,27 @@ text-align: center;
 /* pas de marge ni de padding */
 nav ul {
   margin: 0;
-  padding: 0%;
+  padding: 0;
 }
 
 /* les éléments de la liste affichés dans une ligne */
 nav li {
-  padding: 4px 12px 4px 12px;
-  float:inherit;
+  display: inline;
 }
 
+a {
+  padding: 4px 12px 4px 12px;
+}
 /* les liens dans la partie navigation en majuscules, couleur noir */
 /* espacés de 12px */
 nav a {
   text-transform: uppercase;
   color:black;
-  letter-spacing: 12px;
-  
+  letter-spacing: 0.75rem;
+  background-color: #fee500;
 }
 
 /* le lien dans la partie navigation en survol devient jaune  */
 nav a:hover {
-  filter:brightness(#fee500)
-  transition 1s;
+ background-color: #fee500;
 }
